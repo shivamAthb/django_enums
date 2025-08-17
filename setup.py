@@ -1,16 +1,16 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="django_dmf",
-    version="0.0.6",
+    name="django_enums",
+    version="0.0.1",
     packages=find_packages(),
     include_package_data=True,
     license_files=["LICENSE"],
     license="MIT",
-    description="A Version Controlled Fully Managed Data Migration Framework for Django",
+    description="A standard way to use enums in Django and expose them via API so that they can be used in the Front End thereby reducing the code duplication.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/shivamAthb/django_dmf",
+    url="https://github.com/shivamAthb/django_enums",
     author="Shivam Sharma",
     author_email="shivam.sharma@helixbeat.com",
     classifiers=[
@@ -36,6 +36,6 @@ setup(
         "Programming Language :: Python :: 3.13",
         "Topic :: Software Development :: Libraries",
     ],
-    install_requires=["Django>=3.2", 'json-log-formatter'],
+    install_requires=["Django>=3.2", "json-log-formatter", "djangorestframework"],
     python_requires=">=3.7",
 )
