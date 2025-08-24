@@ -1,4 +1,4 @@
-ipython==9.4.0
+ipython==8.37.0
 Django==5.2.5
 djangorestframework==3.16.1
 JSON-log-formatter==1.1.1
