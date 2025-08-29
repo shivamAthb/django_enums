@@ -1,10 +1,17 @@
 from setuptools import setup, find_packages
 
+
+def get_version_without_initial_v(version_file_path):
+    with open(version_file_path) as f:
+        return f.read().strip().split("\n")[0].split("=")[-1][1:]
+
+
 setup(
     name="dj_standard_enums",
-    version="0.0.2",
+    version=get_version_without_initial_v("./core/version.txt"),
     packages=find_packages(),
     include_package_data=True,
+    package_data={"hb_geo": ["data/*.csv"], "core": ["version.txt"]},
     license_files=["LICENSE"],
     license="MIT",
     description="A standard way to use enums in Django and expose them via API so that they can be used in the Front End thereby reducing the code duplication.",
