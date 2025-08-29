@@ -3,3 +3,4 @@ recursive-include enums *
 recursive-include enums/migrations *
 recursive-include enums/utils *
 recursive-include enums/framework *
+recursive-include core *
