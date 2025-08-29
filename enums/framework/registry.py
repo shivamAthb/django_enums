@@ -1,5 +1,5 @@
 import importlib
-from django_enums import settings
+from django.conf import settings
 from enums.utils.logging import logger
 
 
